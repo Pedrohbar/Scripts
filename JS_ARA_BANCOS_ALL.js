@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 if($('.marcas')[0]){
 
 $('.Menu').append($('.marcas'));
@@ -16,3 +17,5 @@ $.ajax({ url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function(
 
 $('.Menu').append($(divMenu));
 }
+   
+   });
