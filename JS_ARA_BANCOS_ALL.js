@@ -1,5 +1,9 @@
 if($('.marcas')[0]){
-} else{
+
+$('.Menu').append($('.marcas'));
+
+} 
+else{
 var divMenu;
 
 $.ajax({ url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function(data) { 
@@ -10,5 +14,5 @@ $.ajax({ url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function(
 
 
 
-$('.Menu').append($('.marcas'));
+$('.Menu').append($(divMenu));
 }
