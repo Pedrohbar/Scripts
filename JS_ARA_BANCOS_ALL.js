@@ -18,5 +18,5 @@
                 });
 
             }
-            $('.flex-direction-nav').remove()
+            $('.flex-direction-nav')[0].remove()
         });
