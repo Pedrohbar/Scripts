@@ -22,7 +22,6 @@
                         $('.Menu').append(divMenu);
                     }
                 });
-            $('.flex-direction-nav')[0].remove()
             }
-
+            $('.flex-direction-nav')[0].remove()
         });
