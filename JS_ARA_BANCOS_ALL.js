@@ -1,4 +1,10 @@
         $(document).ready(function () {
+                function Gerar_ID(){
+                var lis = $('.flexslider:eq(0) .slides li');
+                lis.each(function (li) {
+                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
+                });
+}
 
             $('#fb-root').after($('.Container_Menu_Cima')[0]);
             $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
@@ -17,17 +23,10 @@
                         var htmlElements = $(html);
                         divMenu = $('.marcas.hidden-phone', htmlElements);
                         $('.Menu').append(divMenu);
-                        var lis = $('.flexslider:eq(0) .slides li');
-                        lis.each(function (li) {
-                                $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
+                        Gerar_ID();
                     }
                 });
             }
-                var lis = $('.flexslider:eq(0) .slides li');
-                lis.each(function (li) {
-                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
-
-             $('.flex-direction-nav')[0].remove()
+        Gerar_ID();
+         $('.flex-direction-nav')[0].remove()
         });
