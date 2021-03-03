@@ -17,13 +17,14 @@
                         var htmlElements = $(html);
                         divMenu = $('.marcas.hidden-phone', htmlElements);
                         $('.Menu').append(divMenu);
+                        var lis = $('.flexslider:eq(0) .slides li');
+                        lis.each(function (li) {
+                                $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
+                });
                     }
                 });
             }
-    var lis = $('.flexslider:eq(0) .slides li');
-    lis.each(function (li) {
-        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
+
 
              $('.flex-direction-nav')[0].remove()
         });
