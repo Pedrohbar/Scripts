@@ -23,9 +23,10 @@
                     }
                 });
             }
-            var lis = $('.marcas > div > div > .slides > li');
+            var lis = $('.flexslider .slides:eq(0) li');
             lis.each(function(li) {
                 $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
                 });
-            $('.flex-direction-nav')[0].remove()
+            
+             $('.flex-direction-nav')[0].remove()
         });
