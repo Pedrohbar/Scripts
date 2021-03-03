@@ -23,14 +23,14 @@
                     }
                 });
             }
+
+             $('.flex-direction-nav')[0].remove()
+        });
             function testamento(){
                 var lis = $('.flexslider .slides:eq(0) li');
                 lis.each(function(li) {
                         $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
 });
 }
-                testamento();
-             $('.flex-direction-nav')[0].remove()
-        });
-
+    testamento();
             
