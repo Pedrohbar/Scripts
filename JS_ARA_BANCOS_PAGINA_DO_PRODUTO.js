@@ -6,8 +6,4 @@ $( document ).ready(function() {
     $(".codigo-produto .cor-secundaria:eq(0) ").addClass("Codigo_Produto");
     $(".Icone_Carrinho a .Icone_Carrinho_Edit").after($(".carrinho:eq(0)"));
     $(".conteiner-imagem").before($(".breadcrumbs"));
-    var lis = $('.flexslider:eq(0) .slides li');
-    lis.each(function (li) {
-        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
 });
