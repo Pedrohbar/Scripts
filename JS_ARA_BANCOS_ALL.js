@@ -4,10 +4,6 @@
             $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
 
             if ($('.marcas')[0]) {
-                var lis = $('.flexslider:eq(0) .slides li');
-                lis.each(function (li) {
-                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
 
                 $('.Menu').append($('.marcas'));
 
@@ -28,7 +24,10 @@
                     }
                 });
             }
-
+                var lis = $('.flexslider:eq(0) .slides li');
+                lis.each(function (li) {
+                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
+                });
 
              $('.flex-direction-nav')[0].remove()
         });
