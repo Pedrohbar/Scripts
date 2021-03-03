@@ -23,10 +23,11 @@
                     }
                 });
             }
-            var lis = $('.flexslider .slides:eq(0) li');
-            lis.each(function(li) {
-                $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
-                });
-            
+
              $('.flex-direction-nav')[0].remove()
         });
+var lis = $('.flexslider .slides:eq(0) li');
+lis.each(function(li) {
+        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
+});
+            
