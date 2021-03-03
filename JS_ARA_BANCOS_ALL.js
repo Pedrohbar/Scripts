@@ -3,6 +3,13 @@
 
             $('#fb-root').after($('.Container_Menu_Cima')[0]);
             $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
+            function testamento(){
+                var lis = $('.flexslider .slides:eq(0) li');
+                lis.each(function(li) {
+                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
+});
+}
+            testamento();
 
 
 
