@@ -2,7 +2,7 @@
                 function Gerar_ID(){
                 var lis = $('.flexslider:eq(0) .slides li');
                 lis.each(function (li) {
-                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", "-"));
+                        $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
                 });
 }
 
