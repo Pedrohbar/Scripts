@@ -29,7 +29,7 @@
                         $(this).prop('id', $(this).text().replaceAll(" ", "").replaceAll("\n", ""));
 });
 }
-                testamento()
+                testamento();
              $('.flex-direction-nav')[0].remove()
         });
 
