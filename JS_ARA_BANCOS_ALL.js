@@ -15,14 +15,12 @@
 
             }
             else {
-                var divMenu;
-
-                $.ajax({
-                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function (data) {
+                var Puxar_Menu = $.ajax({
+                        url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function (data) {
                         var html = data;
                         var htmlElements = $(html);
                         divMenu = $('.marcas.hidden-phone', htmlElements);
-                        $('.Menu').append(divMenu);
+                        $('.Menu').append(Puxar_Menu);
                         Gerar_ID();
                     }
                 });
