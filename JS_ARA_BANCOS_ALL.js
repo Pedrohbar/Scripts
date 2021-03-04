@@ -23,9 +23,9 @@
                         Testinho = $('.marcas', htmlElements);
                         $('.Menu').append(Testinho);                        
                     }
-                Gerar_ID();  
                 });
 
                 }
+        Gerar_ID();
          $('.flex-direction-nav')[0].remove()
         });
