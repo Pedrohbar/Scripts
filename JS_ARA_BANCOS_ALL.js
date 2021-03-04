@@ -21,7 +21,8 @@
                         var html = aata;
                         var htmlElements = $(html);
                         Testinho = $('.marcas', htmlElements);
-                        $('.Menu').append(Testinho);                        
+                        $('.Menu').append(Testinho);
+                        Gerar_ID();                        
                     }
                 });
 
