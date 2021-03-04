@@ -15,9 +15,8 @@
 
             }
             else {
-            var Testinho;
-
-                $.ajax({
+                    
+                var Testinho = $.ajax({
                     url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
                         var html = aata;
                         var htmlElements = $(html);
