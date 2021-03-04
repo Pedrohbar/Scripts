@@ -23,9 +23,9 @@
                         var htmlElements = $(html);
                         Testinho = $('#listagemProdutos ul', htmlElements);
                         $('.Sub_Menu_Marcas').append(Testinho);
+                        Gerar_ID();
                     }
                 });
             }
-        Gerar_ID();
          $('.flex-direction-nav')[0].remove()
         });
