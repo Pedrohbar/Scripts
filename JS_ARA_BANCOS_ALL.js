@@ -21,10 +21,11 @@
                         var html = aata;
                         var htmlElements = $(html);
                         Testinho = $('.marcas', htmlElements);
-                        $('.Menu').append(Testinho);
-                        Gerar_ID();
+                        $('.Menu').append(Testinho);                        
                     }
+                    
                 });
-            }
+            Gerar_ID();
+                }
          $('.flex-direction-nav')[0].remove()
         });
