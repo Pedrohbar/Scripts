@@ -1,10 +1,11 @@
         $(document).ready(function () {
                 function Gerar_ID(){
-         var lis = $('.flex-viewport ul li');
+         var lis = $('.flexslider ul li');
                 lis.each(function (li) {
-                    $(this).prop('id', $(this).text().trim().replace(" ","-").replaceAll("\n", "").toLowerCase());
-                });
-}
+                    $(this).prop('id', $(this).text().trim().replace(" ","-").replaceAll("\n", "").toLowerCase()) 
+});
+                }
+                         
 
             $('#fb-root').after($('.Container_Menu_Cima')[0]);
             $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
