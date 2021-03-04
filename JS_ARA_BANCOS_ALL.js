@@ -2,7 +2,8 @@
                 function Gerar_ID(){
          var lis = $('.flexslider:eq(0) ul li');
                 lis.each(function (li) {
-                    $(this).prop('id', $(this).text().trim().replace(" ","-").replaceAll("\n", "").toLowerCase()) 
+                    $(this).prop('id', $(this).text().trim().replace(" ","-").replaceAll("\n", "").toLowerCase());
+                     
 });
                 }
                          
@@ -16,13 +17,13 @@
 
             }
             else {
-                    
-                var Testinho = $.ajax({
+                  //requisitar ajax para puxar os elementos das outras paginas  
+                var Puxar_Menu_Marcas = $.ajax({
                     url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
                         var html = aata;
                         var htmlElements = $(html);
-                        Testinho = $('.marcas', htmlElements);
-                        $('.Menu').append(Testinho);
+                        Puxar_Menu_Marca = $('.marcas', htmlElements);
+                        $('.Menu').append(Puxar_Menu_Marca);
                         Gerar_ID();                        
                     }
                 });
