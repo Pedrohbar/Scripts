@@ -18,7 +18,7 @@
             var Testinho;
 
                 $.ajax({
-                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br/marca/kawasaki.html', success: function (aata) {
+                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
                         var html = aata;
                         var htmlElements = $(html);
                         Testinho = $('#listagemProdutos ul', htmlElements);
