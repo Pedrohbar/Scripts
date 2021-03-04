@@ -23,7 +23,7 @@
                         var html = aata;
                         var htmlElements = $(html);
                         Puxar_Menu_Marcas = $('.marcas', htmlElements);
-                        $('.Menu').append(Puxar_Menu_Marca);
+                        $('.Menu').append(Puxar_Menu_Marcas);
                         Gerar_ID();                        
                     }
                 });
