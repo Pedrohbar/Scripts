@@ -22,7 +22,7 @@
                     url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
                         var html = aata;
                         var htmlElements = $(html);
-                        Puxar_Menu_Marca = $('.marcas', htmlElements);
+                        Puxar_Menu_Marcas = $('.marcas', htmlElements);
                         $('.Menu').append(Puxar_Menu_Marca);
                         Gerar_ID();                        
                     }
