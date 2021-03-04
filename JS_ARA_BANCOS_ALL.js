@@ -1,6 +1,6 @@
         $(document).ready(function () {
                 function Gerar_ID(){
-         var lis = $('.flexslider ul li');
+         var lis = $('.flexslider:eq(0) ul li');
                 lis.each(function (li) {
                     $(this).prop('id', $(this).text().trim().replace(" ","-").replaceAll("\n", "").toLowerCase()) 
 });
