@@ -21,7 +21,7 @@
                     url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
                         var html = aata;
                         var htmlElements = $(html);
-                        Testinho = $('#listagemProdutos ul', htmlElements);
+                        Testinho = $('.marcas', htmlElements);
                         $('.Sub_Menu_Marcas').append(Testinho);
                         Gerar_ID();
                     }
