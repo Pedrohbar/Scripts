@@ -15,14 +15,14 @@
 
             }
             else {
-                var Puxar_Menu;
-                        $.ajax({
-                        url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function (data) {
-                        var html = data;
+            var Testinho;
+
+                $.ajax({
+                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br/marca/kawasaki.html', success: function (aata) {
+                        var html = aata;
                         var htmlElements = $(html);
-                        divMenu = $('.marcas.hidden-phone', htmlElements);
-                        $('.Menu').append(Puxar_Menu);
-                        Gerar_ID();
+                        Testinho = $('#listagemProdutos ul', htmlElements);
+                        $('.Sub_Menu_Marcas').append(Testinho);
                     }
                 });
             }
