@@ -15,7 +15,8 @@
 
             }
             else {
-                var Puxar_Menu = $.ajax({
+                var Puxar_Menu;
+                        $.ajax({
                         url: 'https://sdasdsadsadasf.lojaintegrada.com.br/', success: function (data) {
                         var html = data;
                         var htmlElements = $(html);
