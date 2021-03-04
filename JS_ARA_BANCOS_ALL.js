@@ -19,7 +19,8 @@
             else {
                   //requisitar ajax para puxar os elementos das outras paginas  
                 var Puxar_Menu_Marcas = $.ajax({
-                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function () {
+                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
+                        var html = aata;
                         var htmlElements = $(html);
                         Puxar_Menu_Marca = $('.marcas', htmlElements);
                         $('.Menu').append(Puxar_Menu_Marca);
@@ -27,7 +28,7 @@
                     }
                 });
 
-                }
+                } 
         Gerar_ID();
          $('.flex-direction-nav')[0].remove()
         });
