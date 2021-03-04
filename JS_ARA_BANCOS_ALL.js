@@ -19,8 +19,7 @@
             else {
                   //requisitar ajax para puxar os elementos das outras paginas  
                 var Puxar_Menu_Marcas = $.ajax({
-                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
-                        var html = aata;
+                    url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function () {
                         var htmlElements = $(html);
                         Puxar_Menu_Marca = $('.marcas', htmlElements);
                         $('.Menu').append(Puxar_Menu_Marca);
