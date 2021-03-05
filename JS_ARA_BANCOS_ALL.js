@@ -51,11 +51,9 @@ $(document).ready(function () {
                 var htmlElements = $(html);
                 Puxar_Menu_Marcas = $('.marcas', htmlElements);
                 $('.Menu').append(Puxar_Menu_Marcas);
-                Gerar_ID();
             }
         });
 
     }
-    Gerar_ID();
     $('.flex-direction-nav')[0].remove()
 });
