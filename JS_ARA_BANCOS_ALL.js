@@ -59,7 +59,7 @@ var lis = $('.flexslider:eq(0) ul li');
                 });
 
                 } 
-        $(".flex-viewport").after($(".Sub_Menu_Marcas")); 
+        $(".slides:eq(0)").after($(".Sub_Menu_Marcas")); 
          Gerar_ID();
          $('.flex-direction-nav')[0].remove()
         });
