@@ -67,5 +67,5 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
-    $(".Editar_Marcas_Moto .info-produto .preco-produto").remove();
+    $(".Editar_Marcas_Moto .info-produto .preco-produto").remove()
 });
