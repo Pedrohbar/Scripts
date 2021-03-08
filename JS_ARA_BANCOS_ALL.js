@@ -1,5 +1,6 @@
 $(document).ready(function () {
     function Gerar_ID() {
+        
         lis.each(function (liuu) {
             var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
             var liId = $(this).prop('id');
