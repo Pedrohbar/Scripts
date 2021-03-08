@@ -48,7 +48,6 @@ $(document).ready(function () {
     if ($('.marcas')[0]) {
 
         $('.Menu').append($('.marcas'));
-	$(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 
     }
     else {
@@ -66,4 +65,5 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
+    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 });
