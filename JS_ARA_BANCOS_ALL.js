@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    function Gerar_ID() {
+	$(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
+	function Gerar_ID() {
      
 		var lis = $('.flexslider:eq(0) ul li');
 
@@ -65,5 +66,4 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
-    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 });
