@@ -19,6 +19,7 @@ $(document).ready(function () {
 	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
 		    $(".Sub_Menu_Marcas .listagem-item").addClass("Editar_Marcas_Moto");
                     $(".Sub_Menu_Marcas").append(b);
+		    $(".Editar_Marcas_Moto .info-produto .preco-produto").remove()
                 }
             });
 
@@ -67,5 +68,5 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
-    $(".Editar_Marcas_Moto .info-produto .preco-produto").remove()
+
 });
