@@ -15,7 +15,7 @@ $(document).ready(function () {
 
                     b.prop('id', 'listagemProdutos-' + liId);
                     b.css('display', 'none');
-
+	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
@@ -65,5 +65,4 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
-    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 });
