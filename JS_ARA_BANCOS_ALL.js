@@ -17,7 +17,7 @@ $(document).ready(function () {
                     b.prop('id', 'listagemProdutos-' + liId);
                     b.css('display', 'none');
 	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
-		    b.children().find(".preco-produto").remove();
+		    b.children().find(".preco-produto, .acoes-produto").remove();
 		    $(".Sub_Menu_Marcas .listagem-item").addClass("Editar_Marcas_Moto");
                     $(".Sub_Menu_Marcas").append(b);
                 }
