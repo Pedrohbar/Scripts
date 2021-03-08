@@ -1,11 +1,11 @@
 $(document).ready(function () {
     function Gerar_ID() {
      
-     var lis = $('.flexslider:eq(0) ul li');
+		var lis = $('.flexslider:eq(0) ul li');
 
         lis.each(function (liuu) {
-            var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
-            var liId = $(this).prop('id');
+           var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
+           var liId = $(this).prop('id');
 
             var b = $.ajax({
                 url: "https://sdasdsadsadasf.lojaintegrada.com.br/marca/" + a.text().trim().replace(" ", "-").toLowerCase() + ".html", success: function (atoo) {
@@ -26,11 +26,17 @@ $(document).ready(function () {
                 $('#listagemProdutos-' + liId).css('display', 'block');
             });
 
-            $(".flexslider:eq(0)").mouseleave(function () {
-                $(".Sub_Menu_Marcas").css("display", "none")
-
+            $(".Sub_Menu_Marcas").mouseenter(function () {
+                $(".Sub_Menu_Marcas").css("display", "block")
             });
 
+            $(".Sub_Menu_Marcas").mouseleave(function () {
+                $(".Sub_Menu_Marcas").css("display", "none")
+            });
+
+            a.mouseleave(function () {
+                $(".Sub_Menu_Marcas").css("display", "none")
+            });
         });
 
     }
