@@ -44,7 +44,6 @@ $(document).ready(function () {
 
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
-    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 
     if ($('.marcas')[0]) {
 
@@ -66,4 +65,5 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
+    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 });
