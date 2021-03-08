@@ -16,6 +16,7 @@ $(document).ready(function () {
                     b.prop('id', 'listagemProdutos-' + liId);
                     b.css('display', 'none');
 	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
+		    $(".Edit_Listas_Sub_Menu_Marcas").children().find(".info-produto, .acoes-produto").remove()
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
