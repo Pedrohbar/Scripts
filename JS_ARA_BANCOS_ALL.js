@@ -65,4 +65,5 @@ $(document).ready(function () {
     }
     Gerar_ID();
     $('.flex-direction-nav:eq(0)').remove();
+    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 });
