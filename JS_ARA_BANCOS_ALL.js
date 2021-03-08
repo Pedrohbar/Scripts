@@ -44,6 +44,7 @@ $(document).ready(function () {
 
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
+    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 
     if ($('.marcas')[0]) {
 
@@ -58,13 +59,11 @@ $(document).ready(function () {
                 var htmlElements = $(html);
                 Puxar_Menu_Marcas = $('.marcas', htmlElements);
                 $('.Menu').append(Puxar_Menu_Marcas);                
-		$(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
 		Gerar_ID();
             }
         });
 
     }
     Gerar_ID();
-    $(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
     $('.flex-direction-nav:eq(0)').remove();
 });
