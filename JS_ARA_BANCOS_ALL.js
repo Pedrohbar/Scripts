@@ -12,11 +12,11 @@ $(document).ready(function () {
                     var htmldois = atoo;
                     var htmlElementsDois = $(htmldois);
                     b = $("#listagemProdutos", htmlElementsDois);
+		     
 
                     b.prop('id', 'listagemProdutos-' + liId);
                     b.css('display', 'none');
 	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
-		    $(".Editar_Marcas_Moto .info-produto .preco-produto").remove()
 		    $(".Sub_Menu_Marcas .listagem-item").addClass("Editar_Marcas_Moto");
                     $(".Sub_Menu_Marcas").append(b);
                 }
@@ -66,5 +66,5 @@ $(document).ready(function () {
 
     }
     Gerar_ID();
-    $('.flex-direction-nav:eq(0)').remove();
+    $('.flex-direction-nav:eq(0), .Editar_Marcas_Moto .info-produto .preco-produto').remove();
 });
