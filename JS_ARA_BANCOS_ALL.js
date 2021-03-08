@@ -1,6 +1,8 @@
 $(document).ready(function () {
     function Gerar_ID() {
-        
+     
+     var lis = $('.flexslider:eq(0) ul li');
+
         lis.each(function (liuu) {
             var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
             var liId = $(this).prop('id');
@@ -56,5 +58,5 @@ $(document).ready(function () {
 
     }
     Gerar_ID();
-    $('.flex-direction-nav:eq(0)').remove()
+    $('.flex-direction-nav:eq(0)').remove();
 });
