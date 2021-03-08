@@ -55,5 +55,5 @@ $(document).ready(function () {
 
     }
     Gerar_ID();
-    $('.flex-direction-nav')[0].remove()
+    $('.flex-direction-nav:eq(0)').remove()
 });
