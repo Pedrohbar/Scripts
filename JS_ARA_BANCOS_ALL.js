@@ -57,8 +57,9 @@ $(document).ready(function () {
                 var html = aata;
                 var htmlElements = $(html);
                 Puxar_Menu_Marcas = $('.marcas', htmlElements);
-                $('.Menu').append(Puxar_Menu_Marcas);
-                Gerar_ID();
+                $('.Menu').append(Puxar_Menu_Marcas);                
+		$(".Sub_Menu_Marcas").children().addClass("Edit_Listas_Sub_Menu_Marcas");
+		Gerar_ID();
             }
         });
 
