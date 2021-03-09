@@ -22,7 +22,7 @@ $(document).ready(function () {
 		    b.children().find(".info-produto").addClass("Editar_Texto_Sub_Marcas");
 		    b.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
 	            b.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
-		    b.children().find(".Edit_Listas_Sub_Menu_Marcas ul").not(".row-fluid").addClass("alala")
+		    b.children().find(".Edit_Listas_Sub_Menu_Marcas ul").addClass("alala");
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
