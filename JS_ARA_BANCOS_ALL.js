@@ -18,7 +18,7 @@ $(document).ready(function () {
                     b.css('display', 'none');
 	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
 		    b.children().find(".preco-produto, .acoes-produto").remove();
-		    $(".Sub_Menu_Marcas .span3").addClass("Editar_Texto_Sub_Marcas");
+		    $(".Sub_Menu_Marcas .span3").addClass("Editar_li_Sub_Marcas");
 		    $(".Sub_Menu_Marcas .info-produto").addClass("Editar_Texto_Sub_Marcas");		    
 		    $(".Sub_Menu_Marcas .listagem-item").addClass("Editar_Marcas_Moto");
 	            $(".Sub_Menu_Marcas .imagem-produto").addClass("Editar_Img_Sub_Marcas");
