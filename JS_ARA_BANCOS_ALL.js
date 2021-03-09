@@ -22,7 +22,7 @@ $(document).ready(function () {
 		    b.children().find(".info-produto").addClass("Editar_Texto_Sub_Marcas");
 		    b.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
 	            b.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
-		    b.children().children().find("ul").not(".row-fluid").addClass("ul_data_produtos_linha");
+		    b.children().find("ul").not(".row-fluid").addClass("ul_data_produtos_linha");
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
