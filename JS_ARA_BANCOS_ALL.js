@@ -20,6 +20,7 @@ $(document).ready(function () {
 		    b.children().find(".preco-produto, .acoes-produto").remove();
 		    $(".Sub_Menu_Marcas .info-produto").addClass("Editar_Texto_Sub_Marcas");		    
 		    $(".Sub_Menu_Marcas .listagem-item").addClass("Editar_Marcas_Moto");
+	            $(".Sub_Menu_Marcas .imagem-produto").addClass("Editar_Img_Sub_Marcas");
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
