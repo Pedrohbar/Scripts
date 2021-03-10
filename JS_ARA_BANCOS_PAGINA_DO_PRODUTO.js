@@ -6,4 +6,5 @@ $( document ).ready(function() {
     $(".codigo-produto .cor-secundaria:eq(0) ").addClass("Codigo_Produto");
     $(".Icone_Carrinho a .Icone_Carrinho_Edit").after($(".carrinho:eq(0)"));
     $(".conteiner-imagem").before($(".breadcrumbs"));
+    $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar")
 });
