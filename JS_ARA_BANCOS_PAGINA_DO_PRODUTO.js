@@ -10,12 +10,6 @@ $( document ).ready(function() {
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
     $(".span12.produto>.row-fluid").not(".hide").eq(1).addClass("Container_Descricao");
     if($(".Container_Descricao")){
-    $(".Container_Descricao").before($(".Container_Texto_Descricao_Produto"))
 
-}
-    else{
-$(".Container_Texto_Descricao_Produto").remove()
-
-}
     
 });
