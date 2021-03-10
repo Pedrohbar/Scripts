@@ -9,12 +9,12 @@ $( document ).ready(function() {
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar");
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
     $(".span12.produto>.row-fluid").not(".hide").eq(1).addClass("Container_Descricao");
-    if(".Container_Descricao"){
+    if($(".Container_Descricao")){
     $(".Container_Descricao").before($(".Container_Texto_Descricao_Produto"))
 
 }
     else{
-$(."Container_Texto_Descricao_Produto").remove()
+$(".Container_Texto_Descricao_Produto").remove()
 
 }
     
