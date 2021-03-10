@@ -8,6 +8,7 @@ $( document ).ready(function() {
     $(".conteiner-imagem").before($(".breadcrumbs"));
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar");
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
+    
     if($(".tab-content").length === 2){
     $(".abas-custom:eq(0)").before($(".Container_Texto_Descricao_Produto"))
 }
@@ -16,5 +17,10 @@ else{
     $(".Container_Texto_Descricao_Produto").remove()
 
 }
+        
+        if($(".abas-custom").length === 2){
+    $(".abas-custom:eq(0)").addClass("abas_custom_edit")
+}
+
 
 });
