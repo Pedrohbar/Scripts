@@ -7,4 +7,6 @@ $( document ).ready(function() {
     $(".Icone_Carrinho a .Icone_Carrinho_Edit").after($(".carrinho:eq(0)"));
     $(".conteiner-imagem").before($(".breadcrumbs"));
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar");
+    $(".acoes-produto").not(".hidden-phone").children().not(".comprar").first().addClass("Editar_Preco_Sem_Classe");
+    
 });
