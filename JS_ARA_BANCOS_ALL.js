@@ -70,6 +70,6 @@ $(document).ready(function () {
 
     }
     Gerar_ID();
-    $('.flex-direction-nav:eq(0), #rodape').remove();
+    $('.flex-direction-nav:eq(0), #rodape, .modal-backdrop, #AcessoRestritoIdade').remove()
 
 });
