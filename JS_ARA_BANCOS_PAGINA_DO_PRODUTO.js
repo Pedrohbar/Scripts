@@ -7,5 +7,5 @@ $( document ).ready(function() {
     $(".Icone_Carrinho a .Icone_Carrinho_Edit").after($(".carrinho:eq(0)"));
     $(".conteiner-imagem").before($(".breadcrumbs"));
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar")
-    $(".Editar_div_Comprar .acoes-produto:eq(2)").children().first().addClass("Editar_Preco_Sem_Classe")
+    $(".Editar_div_Comprar .acoes-produto").children().first().addClass("Editar_Preco_Sem_Classe")
 });
