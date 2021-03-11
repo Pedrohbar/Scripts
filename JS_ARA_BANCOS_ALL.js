@@ -1,27 +1,27 @@
 $(document).ready(function () {
-	function Gerar_ID() {
-     
-		var lis = $('.flexslider:eq(0) ul li');
+    function Gerar_ID() {
+
+        var lis = $('.flexslider:eq(0) ul li');
 
         lis.each(function (liuu) {
-           var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
-           var liId = $(this).prop('id');
+            var a = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
+            var liId = $(this).prop('id');
 
             var b = $.ajax({
                 url: "https://sdasdsadsadasf.lojaintegrada.com.br/marca/" + a.text().trim().replace(" ", "-").toLowerCase() + ".html", success: function (atoo) {
                     var htmldois = atoo;
                     var htmlElementsDois = $(htmldois);
                     b = $("#listagemProdutos", htmlElementsDois);
-		     
+
 
                     b.prop('id', 'listagemProdutos-' + liId);
                     b.css('display', 'none');
-	            b.addClass("Edit_Listas_Sub_Menu_Marcas");
-		    b.children().find(".preco-produto, .acoes-produto").remove();
-		    b.children().find(".span3").addClass("Editar_li_Sub_Marcas");
-		    b.children().find(".info-produto").addClass("Editar_Texto_Sub_Marcas");
-		    b.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
-	            b.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
+                    b.addClass("Edit_Listas_Sub_Menu_Marcas");
+                    b.children().find(".preco-produto, .acoes-produto").remove();
+                    b.children().find(".span3").addClass("Editar_li_Sub_Marcas");
+                    b.children().find(".info-produto").addClass("Editar_Texto_Sub_Marcas");
+                    b.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
+                    b.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
                     $(".Sub_Menu_Marcas").append(b);
                 }
             });
@@ -63,13 +63,24 @@ $(document).ready(function () {
                 var html = aata;
                 var htmlElements = $(html);
                 Puxar_Menu_Marcas = $('.marcas', htmlElements);
-                $('.Menu').append(Puxar_Menu_Marcas);                
-		Gerar_ID();
+                $('.Menu').append(Puxar_Menu_Marcas);
+                Gerar_ID();
             }
         });
 
     }
     Gerar_ID();
+    if (window.location.pathname.includes("/conta/login")) {
+
+        var link = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_DO_CADASTRO.css"
+        })
+        $('head').append(link);
+
+
+    }
     $('.flex-direction-nav:eq(0), #rodape, .modal-backdrop, #AcessoRestritoIdade').remove()
 
 });
