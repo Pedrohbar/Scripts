@@ -78,6 +78,7 @@ $(document).ready(function () {
             href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_DO_CADASTRO.css"
         })
         $('head').append(link);
+        $("#corpo").after($(".Footer"))
 
 
     }
