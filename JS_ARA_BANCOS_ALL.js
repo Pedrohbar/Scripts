@@ -95,7 +95,7 @@ $(document).ready(function () {
         });
 
         $('head').append(Link);
-        $('#id_tipo_0').append(Div_Botao);
+        $('#id_tipo_0:eq(0)').append(Div_Botao);
         $("#corpo").after($(".Footer"))
 
 
