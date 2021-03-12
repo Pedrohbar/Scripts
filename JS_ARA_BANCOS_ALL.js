@@ -82,6 +82,18 @@ $(document).ready(function () {
 
 
     }
+        if (window.location.pathname.includes("/conta/criar")) {
+
+        var link = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_CRIAR_CONTA.css"
+        })
+        $('head').append(link);
+        $("#corpo").after($(".Footer"))
+
+
+    }
     $('.flex-direction-nav:eq(0), #rodape, .modal-backdrop, #AcessoRestritoIdade').remove()
 
 });
