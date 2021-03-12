@@ -82,13 +82,18 @@ $(document).ready(function () {
 
 
     }
-        if (window.location.pathname.includes("/conta/criar")) {
+    if (window.location.pathname.includes("/conta/criar")) {
 
         var link = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_CRIAR_CONTA.css"
-        })
+        });
+
+        var link = $("<div />", {
+            class: "Edit_Input_Radio"
+        });
+
         $('head').append(link);
         $("#corpo").after($(".Footer"))
 
