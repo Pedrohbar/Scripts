@@ -95,6 +95,7 @@ $(document).ready(function () {
         });
 
         $('head').append(Link);
+        $("#id_tipo label").addClass("Inputs_Radio");
         $('#id_tipo li label:eq(0)').append(Div_Botao);
         $("#corpo").after($(".Footer"))
 
