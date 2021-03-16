@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $(".carrinho i,.carrinho span, .cep, #DelimiterFloat").remove();
+    $(".carrinho i,.carrinho span, #DelimiterFloat").remove();
     $( ".span6:eq(1)" ).addClass("Edit_Img");
     $(".produto .row-fluid:eq(0) .span6:eq(1)").addClass("Edit_Comprar");
     $(".conteiner:eq(2)").addClass("Edit_Container_Produto");
@@ -8,6 +8,7 @@ $( document ).ready(function() {
     $(".conteiner-imagem").before($(".breadcrumbs"));
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar");
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
+    $(".Edit_Comprar").after($(".Container_Preco"));
     
     if($(".tab-content").length === 2){
     $(".abas-custom:eq(0)").before($(".Container_Texto_Descricao_Produto"))
