@@ -10,6 +10,7 @@ $( document ).ready(function() {
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
     $(".Edit_Comprar").after($(".Container_Preco"));
     $(".produto .row-fluid:eq(1)").addClass("Descricao");
+    $(".Container_Preco").append($(".Descricao"));
     
     if($(".tab-content").length === 2){
     $(".abas-custom:eq(0)").before($(".Container_Texto_Descricao_Produto"))
