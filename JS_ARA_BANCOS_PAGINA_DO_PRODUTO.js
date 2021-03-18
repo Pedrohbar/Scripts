@@ -9,7 +9,8 @@ $( document ).ready(function() {
     $(".Edit_Comprar .principal").not(".botao-comprar").addClass("Editar_div_Comprar");
     $(".acoes-produto").not(".hidden-phone").children().not(".comprar").not(":nth-child(even)").addClass("Espacar_Preco_E_Botao");
     $(".Edit_Comprar").after($(".Container_Preco"));
-    $(".info-principal-produto").after($(".Descricao"))
+    $(".produto .row-fluid:eq(1)").addClass("Descricao");
+    $(".info-principal-produto").after($(".Descricao"));
     
     
     if($(".tab-content").length === 2){
