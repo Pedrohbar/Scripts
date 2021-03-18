@@ -11,7 +11,7 @@ $( document ).ready(function() {
     $(".Edit_Comprar").after($(".Container_Preco"));
     $(".produto .row-fluid:eq(1)").addClass("Descricao");
     $(".info-principal-produto").after($(".Descricao"));
-    $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Cep_Comprar");
+    $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     
     
     if($(".tab-content").length === 2){
