@@ -15,6 +15,7 @@ $( document ).ready(function() {
     $(".Container_Preco").append($(".Preco_Comprar"));
     $(".Espacar_Preco_E_Botao").after($(".cep"));
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
+    $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
     
     
     if($(".tab-content").length === 2){
