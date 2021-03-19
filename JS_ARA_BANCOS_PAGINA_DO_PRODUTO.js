@@ -13,7 +13,8 @@ $( document ).ready(function() {
     $(".info-principal-produto").after($(".Descricao"));
     $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     $(".Container_Preco").append($(".Preco_Comprar"));
-    $(".Espacar_Preco_E_Botao").after($(".cep"))
+    $(".Espacar_Preco_E_Botao").after($(".cep"));
+    $(".Edit_Container_Produto").before($(".breadcrumbs"));
     
     
     if($(".tab-content").length === 2){
