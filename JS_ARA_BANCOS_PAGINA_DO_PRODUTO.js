@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".carrinho i,.carrinho span, #DelimiterFloat").remove();
     $( ".span6:eq(1)" ).addClass("Edit_Img");
     $(".produto .row-fluid:eq(0) .span6:eq(1)").addClass("Edit_Comprar");
     $(".conteiner:eq(2)").addClass("Edit_Container_Produto");
@@ -13,9 +14,11 @@ $( document ).ready(function() {
     $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     $(".Container_Preco").append($(".Preco_Comprar"));
     $(".Espacar_Preco_E_Botao").after($(".cep"));
+    $(".cep:eq(1)").remove();
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
-    $(".carrinho i,.carrinho span, #DelimiterFloat, .cep:eq(1)").remove();
+
+
     
     
     if($(".tab-content").length === 2){
