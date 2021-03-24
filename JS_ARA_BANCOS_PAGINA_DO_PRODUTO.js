@@ -39,7 +39,7 @@ $(document).ready(function () {
         $(".Preco_Comprar").not(".disponivel").css("opacity", "0.5");
         $(".input-cep").last().prop("disabled", "true").css("cursor", "auto");
         $(".btn").last().prop("disabled", "true").css("cursor", "auto");
-        $(".Container_Preco .acoes-produto").last().find(".comprar").children().find(".icon-shopping-cart").css("cursor","auto")
+        $(".Container_Preco .acoes-produto").last().find(".comprar").addClass("Comprar_Desabilitado");
 
     }
 
