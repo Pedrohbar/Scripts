@@ -13,18 +13,7 @@ $( document ).ready(function() {
     $(".info-principal-produto").after($(".Descricao"));
     $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     $(".Container_Preco").append($(".Preco_Comprar"));
-    $(".Espacar_Preco_E_Botao").after($(".cep"));
-    if($(".cep").length > 1){
-        
-        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
-        $(".input-cep").last().prop("disabled","true").css("cursor","auto");
-        $(".btn").last().prop("disabled","true").css("cursor","auto");
-        $(".btn").last().hover(function(){
-        $(this).css("background","#272727");
-
-        });
-    }
-    
+    $(".Espacar_Preco_E_Botao").after($(".cep"));    
     $(".acoes-flutuante .cep").remove();
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
@@ -44,6 +33,16 @@ else{
         if($(".abas-custom").length === 2){
     $(".abas-custom:eq(0)").addClass("abas_custom_edit")
 }
+        if($(".cep").length > 1){
+        
+        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
+        $(".input-cep").last().prop("disabled","true").css("cursor","auto");
+        $(".btn").last().prop("disabled","true").css("cursor","auto");
+        $(".btn").last().hover(function(){
+        $(this).css("background","#272727");
+
+        });
+    }
 
 
 });
