@@ -18,9 +18,9 @@ $( document ).ready(function() {
         
         $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
         $(".input-cep").last().prop("disabled","true").css("cursor","auto");
-        $(".btn").last().prop("disabled","true").css("cursor","auto")
+        $(".btn").last().prop("disabled","true").css("cursor","auto");
         $(".btn").last().hover(function(){
-            $(this).css("background","#1c1c1c")
+            $(this).css("background","#1c1c1c");
         });
     }
     
