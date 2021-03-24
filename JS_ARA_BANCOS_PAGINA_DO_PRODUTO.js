@@ -34,14 +34,14 @@ else{
     $(".abas-custom:eq(0)").addClass("abas_custom_edit")
 }
         if($(".cep").length > 1){
-        
-        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
-        $(".input-cep").last().prop("disabled","true").css("cursor","auto");
+                    
         $(".btn").last().hover(function(){
             $(this).css("background","#272727");
 
         });
-            
+        
+        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
+        $(".input-cep").last().prop("disabled","true").css("cursor","auto");            
         $(".btn").last().prop("disabled","true").css("cursor","auto");
 
     }
