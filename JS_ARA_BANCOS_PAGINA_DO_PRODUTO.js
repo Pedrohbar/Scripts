@@ -37,11 +37,13 @@ else{
         
         $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
         $(".input-cep").last().prop("disabled","true").css("cursor","auto");
-        $(".btn").last().prop("disabled","true").css("cursor","auto");
         $(".btn").last().hover(function(){
-        $(this).css("background","#272727");
+            $(this).css("background","#272727");
 
         });
+            
+        $(".btn").last().prop("disabled","true").css("cursor","auto");
+
     }
 
 
