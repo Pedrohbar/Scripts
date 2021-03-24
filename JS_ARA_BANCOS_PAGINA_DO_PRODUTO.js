@@ -1,6 +1,6 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     $(".carrinho i,.carrinho span, #DelimiterFloat").remove();
-    $( ".span6:eq(1)" ).addClass("Edit_Img");
+    $(".span6:eq(1)").addClass("Edit_Img");
     $(".produto .row-fluid:eq(0) .span6:eq(1)").addClass("Edit_Comprar");
     $(".conteiner:eq(2)").addClass("Edit_Container_Produto");
     $(".codigo-produto .cor-secundaria:eq(0) ").addClass("Codigo_Produto");
@@ -13,36 +13,32 @@ $( document ).ready(function() {
     $(".info-principal-produto").after($(".Descricao"));
     $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     $(".Container_Preco").append($(".Preco_Comprar"));
-    $(".Espacar_Preco_E_Botao").after($(".cep"));    
+    $(".Espacar_Preco_E_Botao").after($(".cep"));
     $(".acoes-flutuante .cep").remove();
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
 
 
-    
-    
-    if($(".tab-content").length === 2){
-    $(".abas-custom:eq(0)").before($(".Container_Texto_Descricao_Produto"))
-}
-else{
-    
-    $(".Container_Texto_Descricao_Produto").remove()
 
-}
-        
-        if($(".abas-custom").length === 2){
-    $(".abas-custom:eq(0)").addClass("abas_custom_edit")
-}
-        if($(".cep").length > 1){
-                    
-        $(".btn").last().hover(function(){
-            $(this).css("background","#272727");
 
-        });
-        
-        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
-        $(".input-cep").last().prop("disabled","true").css("cursor","auto");            
-        $(".btn").last().prop("disabled","true").css("cursor","auto");
+    if ($(".tab-content").length === 2) {
+        $(".abas-custom:eq(0)").before($(".Container_Texto_Descricao_Produto"))
+    }
+    else {
+
+        $(".Container_Texto_Descricao_Produto").remove()
+
+    }
+
+    if ($(".abas-custom").length === 2) {
+        $(".abas-custom:eq(0)").addClass("abas_custom_edit")
+    }
+    
+    if ($(".cep").length > 1) {
+        $(".btn").last().addClass("Btn_Hover");
+        $(".Preco_Comprar").not(".disponivel").css("opacity", "0.5");
+        $(".input-cep").last().prop("disabled", "true").css("cursor", "auto");
+        $(".btn").last().prop("disabled", "true").css("cursor", "auto");
 
     }
 
