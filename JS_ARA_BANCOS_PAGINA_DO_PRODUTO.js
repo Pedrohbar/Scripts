@@ -16,8 +16,14 @@ $( document ).ready(function() {
     $(".Espacar_Preco_E_Botao").after($(".cep"));
     if($(".cep").length > 1){
         
-        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5")   
+        $(".Preco_Comprar").not(".disponivel").css("opacity","0.5");
+        $(".input-cep").last().prop("disabled","true").css("cursor","auto");
+        $(".btn").last().prop("disabled","true").css("cursor","auto")
+        $(".btn").last().hover(function(){
+            $(this).css("background","#1c1c1c")
+        });
     }
+    
     $(".acoes-flutuante .cep").remove();
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
