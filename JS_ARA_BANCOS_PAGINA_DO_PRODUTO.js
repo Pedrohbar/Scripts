@@ -20,7 +20,8 @@ $( document ).ready(function() {
         $(".input-cep").last().prop("disabled","true").css("cursor","auto");
         $(".btn").last().prop("disabled","true").css("cursor","auto");
         $(".btn").last().hover(function(){
-            $(this).css("background","#1c1c1c");
+        $(this).css("background","#272727");
+
         });
     }
     
