@@ -33,7 +33,7 @@ $(document).ready(function () {
     if ($(".abas-custom").length === 2) {
         $(".abas-custom:eq(0)").addClass("abas_custom_edit")
     }
-    
+
     if ($(".cep").length > 1) {
         $(".btn").last().addClass("Btn_Hover");
         $(".Preco_Comprar").not(".disponivel").css("opacity", "0.5");
@@ -42,6 +42,59 @@ $(document).ready(function () {
         $(".Container_Preco .acoes-produto").last().find(".comprar").addClass("Comprar_Desabilitado");
 
     }
+
+    function Interface_Produto_Grade() {
+
+        let Miniatura = $(".miniaturas li a");
+        let Produto = $(".atributo-item");
+        let i = 0
+
+        Miniatura.each(function () {
+            i++;
+            let Class_Miniatura_E_Numero = "Produto_Miniatura_Img" + i
+
+            $(this).addClass(Class_Miniatura_E_Numero);
+
+
+        });
+        i = 0
+
+        Produto.each(function () {
+            i++;
+            let Class_Produto_E_Numero = "Produto_Miniatura_Img" + i
+
+            $(this).addClass(Class_Produto_E_Numero);
+
+        });
+    }
+
+    var controleClick = false;
+    function Click_Trocar(Numero, Eq_Click_F, Eq_Clicado_Espelho) {
+
+        let Produto_Miniatura_Sem_Numero = $(".Produto_Miniatura_Img" + Numero);
+
+        Produto_Miniatura_Sem_Numero.eq(Eq_Click_F).click(function () {
+            if (!controleClick) {
+                controleClick = true;
+
+                Produto_Miniatura_Sem_Numero.eq(Eq_Clicado_Espelho).click();
+            } else {
+                controleClick = false;
+            }
+        });
+
+
+    }
+
+    Interface_Produto_Grade();
+    Click_Trocar(1, 1, 0);
+    Click_Trocar(1, 0, 1);
+    Click_Trocar(2, 1, 0);
+    Click_Trocar(2, 0, 1);
+    Click_Trocar(3, 1, 0);
+    Click_Trocar(3, 0, 1);
+    Click_Trocar(4, 1, 0);
+    Click_Trocar(4, 0, 1);
 
 
 });
