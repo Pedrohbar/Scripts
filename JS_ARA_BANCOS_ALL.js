@@ -101,6 +101,6 @@ $(document).ready(function () {
 
 
     }
-    $('.flex-direction-nav:eq(0), #rodape, .modal-backdrop, #AcessoRestritoIdade').remove()
+    $('.flex-direction-nav:eq(0), .modal-backdrop, #AcessoRestritoIdade').remove()
 
 });
