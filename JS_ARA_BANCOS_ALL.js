@@ -35,8 +35,9 @@ $(document).ready(function () {
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
 
-    
+
     Gerar_ID();
+    $(".Menu").append($("#rodape"));
 
 
     //Editar dinamicamente paginas sem acesso
