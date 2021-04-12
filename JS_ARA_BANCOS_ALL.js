@@ -6,11 +6,11 @@ $(document).ready(function () {
 
         lis.each(function (liuu) {
 
-            var a = $(this).prop("id", $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
+            var Pegar_Texto_Li = $(this).prop("id", $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
 
             var liId = $(this).prop("id");
 
-            a.mouseenter(function () {
+            Pegar_Texto_Li.mouseenter(function () {
                 $(".Sub_Menu_Marcas").css("display", "block");
                 $(".Sub_Menu_Marcas > .listagem.borda-alpha").css("display", "none");
                 $('#listagemProdutos-' + liId).css('display', 'block');
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $(".Sub_Menu_Marcas").css("display", "none")
             });
 
-            a.mouseleave(function () {
+            Pegar_Texto_Li.mouseleave(function () {
                 $(".Sub_Menu_Marcas").css("display", "none")
             });
         });
