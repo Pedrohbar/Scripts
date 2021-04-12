@@ -17,7 +17,7 @@ $(document).ready(function () {
             
             var Chamada_Ajax_URL = $.ajax({
 
-                url: "https://sdasdsadsadasf.lojaintegrada.com.br/marca/", success: function (atoo) {
+                url: "https://sdasdsadsadasf.lojaintegrada.com.br", success: function (atoo) {
                     var htmldois = atoo;
                     var htmlElementsDois = $(htmldois);
 
