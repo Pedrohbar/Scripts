@@ -31,7 +31,6 @@ $(document).ready(function () {
 
     }
 
-    $("#rodape").children().not(".institucional, .pagamento-selos").remove();
     $('.flex-direction-nav:eq(0), .modal-backdrop, #AcessoRestritoIdade, .institucional .conteiner .row-fluid .span9 .row-fluid .span4 .titulo, .pagamento-selos').remove();
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
