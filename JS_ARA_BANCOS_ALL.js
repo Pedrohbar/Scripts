@@ -24,7 +24,14 @@ $(document).ready(function () {
                     Chamada_Ajax_URL = $(".marcas", htmlElementsDois);
 
 
-
+                    Chamada_Ajax_URL.prop('id', 'listagemProdutos-' + Li_Id);
+                    Chamada_Ajax_URL.css('display', 'none');
+                    Chamada_Ajax_URL.addClass("Edit_Listas_Sub_Menu_Marcas");
+                    Chamada_Ajax_URL.children().find(".preco-produto, .acoes-produto").remove();
+                    Chamada_Ajax_URL.children().find(".span3").addClass("Editar_li_Sub_Marcas");
+                    Chamada_Ajax_URL.children().find(".info-produto").addClass("Editar_Texto_Sub_Marcas");
+                    Chamada_Ajax_URL.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
+                    Chamada_Ajax_URL.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
                     $(".Sub_Menu_Marcas").append(Chamada_Ajax_URL);
                 }
 
