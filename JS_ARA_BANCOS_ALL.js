@@ -1,11 +1,14 @@
 $(document).ready(function () {
+
     function Gerar_ID() {
 
-        var lis = $('.links-rodape ul li');
+        var lis = $(".links-rodape ul li");
 
         lis.each(function (liuu) {
-            var Pegar_Texto_Li = $(this).prop('id', $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
-            var liId = $(this).prop('id');
+
+            var a = $(this).prop("id", $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
+
+            var liId = $(this).prop("id");
 
             a.mouseenter(function () {
                 $(".Sub_Menu_Marcas").css("display", "block");
@@ -27,30 +30,18 @@ $(document).ready(function () {
         });
 
     }
-
-
+    
+    $("#rodape").children().not(".institucional, .pagamento-selos").remove();
+    $('.flex-direction-nav:eq(0), .modal-backdrop, #AcessoRestritoIdade, .institucional .conteiner .row-fluid .span9 .row-fluid .span4 .titulo, .pagamento-selos').remove();
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
 
-    if ($('.marcas')[0]) {
 
-        $('.Menu').append($('.marcas'));
-
-    }
-    else {
-        //requisitar ajax para puxar os elementos das outras paginas  
-        var Puxar_Menu_Marcas = $.ajax({
-            url: 'https://sdasdsadsadasf.lojaintegrada.com.br', success: function (aata) {
-                var html = aata;
-                var htmlElements = $(html);
-                Puxar_Menu_Marcas = $('.marcas', htmlElements);
-                $('.Menu').append(Puxar_Menu_Marcas);
-                Gerar_ID();
-            }
-        });
-
-    }
     Gerar_ID();
+    $(".Menu").append($("#rodape"));
+
+
+    //Editar dinamicamente paginas sem acesso
     if (window.location.pathname.includes("/conta/login")) {
 
         var link = $("<link />", {
@@ -82,6 +73,5 @@ $(document).ready(function () {
 
 
     }
-    $('.flex-direction-nav:eq(0), #rodape, .modal-backdrop, #AcessoRestritoIdade').remove()
 
 });
