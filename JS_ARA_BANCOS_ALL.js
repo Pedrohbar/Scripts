@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     function Gerar_ID() {
 
-        var lis = $('.flexslider.carousel:eq(0) ul li');
+        var lis = $(".links-rodape ul li");
 
         lis.each(function (liuu) {
 
