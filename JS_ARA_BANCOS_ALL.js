@@ -17,7 +17,7 @@ $(document).ready(function () {
             
             var Chamada_Ajax_URL = $.ajax({
 
-                url: "https://sdasdsadsadasf.lojaintegrada.com.br", success: function (atoo) {
+                url: "https://sdasdsadsadasf.lojaintegrada.com.br/marca/", success: function (atoo) {
                     var htmldois = atoo;
                     var htmlElementsDois = $(htmldois);
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
             ID_Texto_Li.mouseenter(function () {
                 $(".Sub_Menu_Marcas").css("display", "block");
                 $(".Sub_Menu_Marcas > .listagem.borda-alpha").css("display", "none");
-                $('#listagemProdutos-' + liId).css('display', 'block');
+                $('#listagemProdutos-' + Li_Id).css('display', 'block');
             });
 
             $(".Sub_Menu_Marcas").mouseenter(function () {
@@ -96,7 +96,7 @@ $(document).ready(function () {
         $('head').append(Link);
         $("#id_tipo label").addClass("Inputs_Radio");
         $('#id_tipo li label:eq(0)').append(Div_Botao);
-        $("#corpo").after($(".Footer"));
+        $("#corpo").after($(".Footer"))
 
 
     }
