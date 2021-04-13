@@ -58,6 +58,7 @@ $(document).ready(function () {
             ID_Texto_Li.mouseenter(function () {
                 $(".Sub_Menu_Marcas").css("display", "block");
                 $(".Sub_Menu_Marcas > .listagem.borda-alpha").css("display", "none");
+				$(".Sub_Menu_Marcas > .marcas").css("display", "none");
                 $('#listagemProdutos-' + Li_Id).css('display', 'block');
             });
 
