@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $(".marcas").css('display', 'none');
+
     function Gerar_ID() {
 
         var Lis_Menu = $(".links-rodape ul li");
@@ -34,22 +36,22 @@ $(document).ready(function () {
                     Chamada_Ajax_URL.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
 
                     $("li", Chamada_Ajax_URL).each(function () {
-						var Valor_Alt = $(this).children().find("img").attr("alt");
-						
-						if(Valor_Alt.toLowerCase().includes(Li_Id.toLowerCase())) {
-							var Div_Texto_Moto = $("<div />", {
-								class: "Texto_Da_Moto"
-							});
+                        var Valor_Alt = $(this).children().find("img").attr("alt");
 
-							
-							Div_Texto_Moto.append(Valor_Alt);
-							$(this).append(Div_Texto_Moto);
-						} else {
-							$(this).remove();
-						}
+                        if (Valor_Alt.toLowerCase().includes(Li_Id.toLowerCase())) {
+                            var Div_Texto_Moto = $("<div />", {
+                                class: "Texto_Da_Moto"
+                            });
+
+
+                            Div_Texto_Moto.append(Valor_Alt);
+                            $(this).append(Div_Texto_Moto);
+                        } else {
+                            $(this).remove();
+                        }
                     });
 
-                    
+
                     $(".Sub_Menu_Marcas").append(Chamada_Ajax_URL);
                 }
 
@@ -58,7 +60,7 @@ $(document).ready(function () {
             ID_Texto_Li.mouseenter(function () {
                 $(".Sub_Menu_Marcas").css("display", "block");
                 $(".Sub_Menu_Marcas > .listagem.borda-alpha").css("display", "none");
-				$(".Sub_Menu_Marcas > .marcas").css("display", "none");
+                $(".Sub_Menu_Marcas > .marcas").css("display", "none");
                 $('#listagemProdutos-' + Li_Id).css('display', 'block');
             });
 
@@ -97,7 +99,7 @@ $(document).ready(function () {
 
 
     }
-	
+
     if (window.location.pathname.includes("/conta/criar")) {
 
         var Link = $("<link />", {
