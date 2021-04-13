@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         var Lis_Menu = $(".links-rodape ul li");
         var Lis_Hidden = $(".marcas.flexslider.flex - viewport.slides li a img");
-        
+
         Lis_Menu.each(function (liuu) {
 
             var ID_Texto_Li = $(this).prop("id", $(this).text().trim().replace(" ", "-").replaceAll("\n", "").toLowerCase());
@@ -14,7 +14,7 @@ $(document).ready(function () {
             var Li_Id = $(this).prop("id");
 
 
-            
+
             var Chamada_Ajax_URL = $.ajax({
 
                 url: "https://sdasdsadsadasf.lojaintegrada.com.br", success: function (atoo) {
@@ -33,6 +33,16 @@ $(document).ready(function () {
                     Chamada_Ajax_URL.children().find(".listagem-item").addClass("Editar_Marcas_Moto");
                     Chamada_Ajax_URL.children().find(".imagem-produto").addClass("Editar_Img_Sub_Marcas");
                     $(".Sub_Menu_Marcas").append(Chamada_Ajax_URL);
+                    $(".marcas .slides li").each(function () {
+                        var Div_Texto_Moto = $("<div />", {
+                            class: "Texto_Da_Moto"
+                        });
+
+                        var Valor_Alt = $(this).children().find("img").attr("alt");
+                        Div_Texto_Moto.append(Valor_Alt);
+                        $(this).append(Div_Texto_Moto);
+
+                    });
                 }
 
             });
@@ -62,23 +72,9 @@ $(document).ready(function () {
     $('.flex-direction-nav:eq(0), .modal-backdrop, #AcessoRestritoIdade, .institucional .conteiner .row-fluid .span9 .row-fluid .span4 .titulo, .pagamento-selos').remove();
     $('#fb-root').after($('.Container_Menu_Cima')[0]);
     $('.Container_Menu_Cima').after($('.Sub_Menu_Marcas')[0]);
-    
+
     Gerar_ID();
     $(".Menu").append($("#rodape"));
-    
-    $(".marcas .slides li").each(function () {
-    var Div_Texto_Moto = $("<div />", {
-        class: "Texto_Da_Moto"
-    });
-
-    var Valor_Alt = $(this).children().find("img").attr("alt");
-    Div_Texto_Moto.append(Valor_Alt);
-    $(this).append(Div_Texto_Moto);
-
-});
-
-    
-
 
     //Editar dinamicamente paginas sem acesso
     if (window.location.pathname.includes("/conta/login")) {
