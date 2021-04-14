@@ -119,6 +119,7 @@ $(document).ready(function () {
         })
         $('head').append(Link_Pagina_Cadastro);
         $("#corpo").after($(".Footer"));
+        $("#modalRecuperarSenha .modal-footer a").remove();
 
 
     }
