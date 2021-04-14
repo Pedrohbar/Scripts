@@ -4,13 +4,15 @@ $(document).ready(function () {
 									'<a href=' + '"https://' + window.location.hostname + '/carrinho/index"' + '>' +
 										'<strong class="qtd-carrinho titulo cor-secundaria">0</strong>' +
 									'</a>' +
-									'<div class="carrinho-interno-ajax"></div>' +
+									'<div id="carrinho-dinamico-ajax" class="carrinho-interno-ajax"></div>' +
 								'</div>';
 								
 		$('.Container_Cadastrar_e_Entrar_Carrinho .Icone_Carrinho a').append(htmlIconeCarrinho);
 		
 		$('.carrinho-interno-ajax:first').load('/carrinho/listar_produtos', function() {
-			$('.carrinho-interno-ajax:not(:first)').html($('.carrinho-interno-ajax:first').html());
+			$('#carrinho-dinamico-ajax').html($('.carrinho-interno-ajax').not('#carrinho-dinamico-ajax').eq(0).html());
+			
+			$('#carrinho-dinamico-ajax .carrinho-interno').css('top', '34px');
 			
 			var textoInfo = $('.carrinho-interno-ajax .carrinho-interno .carrinho-info i:first').text().split(' ');
 			
