@@ -112,12 +112,12 @@ $(document).ready(function () {
     //Editar dinamicamente paginas sem acesso
     if (window.location.pathname.includes("/conta/login")) {
 
-        var link = $("<link />", {
+        var Link_Pagina_Cadastro = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_DO_CADASTRO.css"
         })
-        $('head').append(link);
+        $('head').append(Link_Pagina_Cadastro);
         $("#corpo").after($(".Footer"));
 
 
@@ -125,7 +125,7 @@ $(document).ready(function () {
 	
     if (window.location.pathname.includes("/conta/criar")) {
 
-        var Link = $("<link />", {
+        var Link_Criar_Conta = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles//CSS_ARA_BANCOS_PAGINA_CRIAR_CONTA.css"
@@ -134,10 +134,23 @@ $(document).ready(function () {
         var Div_Botao = $("<div />", {
             class: "Edit_Input_Radio"
         });
-	$('head').append(link);
+	$('head').append(Link_Criar_Conta);
         $("#id_tipo label").addClass("Inputs_Radio");
         $('#id_tipo li label:eq(0)').append(Div_Botao);
 	$("#corpo").after($(".Footer"));
+
+
+    }
+    if (window.location.pathname.includes("/marca/")) {
+
+        var Link_Pagina_Marca = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_MARCA.css"
+        })
+        $('head').append(Link_Pagina_Marca);
+        $("#corpo").after($(".Footer"));
+	$(".image").remove();
 
 
     }
