@@ -14,6 +14,7 @@ $(document).ready(function () {
     $(".Editar_div_Comprar .acoes-produto").addClass("Preco_Comprar");
     $(".Container_Preco").append($(".Preco_Comprar"));
     $(".Espacar_Preco_E_Botao").after($(".cep"));
+    $('.cep:not(:has(form))').remove()
     $(".acoes-flutuante .cep").remove();
     $(".Edit_Container_Produto").before($(".breadcrumbs"));
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
