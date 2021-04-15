@@ -168,4 +168,16 @@ $(document).ready(function () {
 
 
     }
+            if (window.location.pathname.includes("/conta/pedido/listar")) {
+
+        var Link_Meus_Pedidos = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_MEUS_PEDIDOS.css"
+        })
+        $('head').append(Link_Meus_Pedidos);
+        $("#corpo").after($(".Footer"));
+        $(".minha-conta .abas-conta ").children().not(".active").addClass("Desativado");
+
+
 });
