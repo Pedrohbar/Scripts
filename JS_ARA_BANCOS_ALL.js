@@ -155,7 +155,7 @@ $(document).ready(function () {
 
 
     }
-        if (window.location.pathname.includes("/marca/")) {
+        if (window.location.pathname.includes("/conta/index")) {
 
         var Link_Minha_Conta = $("<link />", {
             rel: "stylesheet",
