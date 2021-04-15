@@ -1,1 +1,4 @@
-$("#modalAlerta").remove()
+$( document ).ready(function() {
+  $("#modalAlerta").remove()
+
+});
