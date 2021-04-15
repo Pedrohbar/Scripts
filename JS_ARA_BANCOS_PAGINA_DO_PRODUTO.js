@@ -20,6 +20,11 @@ $(document).ready(function () {
     $(".produto .row-fluid:eq(0)").addClass("Container_Img_Comprar_Preco");
 
 
+    if ($(".accordion-toggle img:eq(5)")) {
+        $(".accordion-toggle img:eq(5)").addClass("Boleto_Bancario");
+    }
+
+
 
 
     if ($(".tab-content").length === 2) {
