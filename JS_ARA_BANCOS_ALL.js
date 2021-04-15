@@ -155,4 +155,16 @@ $(document).ready(function () {
 
 
     }
+        if (window.location.pathname.includes("/marca/")) {
+
+        var Link_Minha_Conta = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_MINHA_CONTA.css"
+        })
+        $('head').append(Link_Minha_Conta);
+        $("#corpo").after($(".Footer"));
+
+
+    }
 });
