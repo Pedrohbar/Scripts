@@ -177,7 +177,7 @@ $(document).ready(function () {
         })
         $('head').append(Link_Meus_Pedidos);
         $("#corpo").after($(".Footer"));
-        $(".minha-conta .abas-conta ").children().not(".active").addClass("Desativado");
+        $(".meus-pedidos .abas-conta").children().not(".active").addClass("Desativado");
             }
 
 
