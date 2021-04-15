@@ -164,6 +164,7 @@ $(document).ready(function () {
         })
         $('head').append(Link_Minha_Conta);
         $("#corpo").after($(".Footer"));
+        $(".minha-conta .abas-conta ").children().not(".active").addClass("Desativado");
 
 
     }
