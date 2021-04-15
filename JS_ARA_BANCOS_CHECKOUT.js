@@ -1,0 +1,1 @@
+$("#modalAlerta").remove()
