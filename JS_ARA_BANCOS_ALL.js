@@ -179,7 +179,7 @@ $(document).ready(function () {
         $("#corpo .conteiner").after($(".Footer"));
         $(".meus-pedidos .abas-conta").children().not(".active").addClass("Desativado");
         if($(".caixa-dados").length <= 1){
-            $("body").css("height","100%")
+            $("body").css("height","100%");
         }
    
 }
