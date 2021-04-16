@@ -182,16 +182,16 @@ $(document).ready(function () {
             $("body").css("height", "100%");
         }
     }
-    if (window.location.pathname.includes("/conta/favorito/listar")) {
+    if (window.location.pathname.includes("/conta/editar")) {
 
-        var Link_Meus_Favoritos = $("<link />", {
+        var Link_Conta_Editar = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
-            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_LISTA_DE_DESEJOS.css"
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_CONTA_EDITAR.css"
         })
-        $('head').append(Link_Meus_Favoritos);
+        $('head').append(Link_Conta_Editar);
         $("#corpo .conteiner").after($(".Footer"));
-        $(".meus-favoritos .abas-conta").children().not(".active").addClass("Desativado");
+        $(".cadastro .abas-conta").children().not(".active").addClass("Desativado");
 
     }
 
