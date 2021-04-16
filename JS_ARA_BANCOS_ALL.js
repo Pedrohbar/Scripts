@@ -155,7 +155,7 @@ $(document).ready(function () {
 
 
     }
-        if (window.location.pathname.includes("/conta/index")) {
+    if (window.location.pathname.includes("/conta/index")) {
 
         var Link_Minha_Conta = $("<link />", {
             rel: "stylesheet",
@@ -168,7 +168,7 @@ $(document).ready(function () {
 
 
     }
-            if (window.location.pathname.includes("/conta/pedido/listar")) {
+    if (window.location.pathname.includes("/conta/pedido/listar")) {
 
         var Link_Meus_Pedidos = $("<link />", {
             rel: "stylesheet",
@@ -178,10 +178,11 @@ $(document).ready(function () {
         $('head').append(Link_Meus_Pedidos);
         $("#corpo .conteiner").after($(".Footer"));
         $(".meus-pedidos .abas-conta").children().not(".active").addClass("Desativado");
-        if($(".caixa-dados").length <= 1){
-            $("body").css("height","100%");
+        if ($(".caixa-dados").length <= 1) {
+            $("body").css("height", "100%");
         }
-            if (window.location.pathname.includes("/conta/favorito/listar")) {
+    }
+    if (window.location.pathname.includes("/conta/favorito/listar")) {
 
         var Link_Meus_Favoritos = $("<link />", {
             rel: "stylesheet",
@@ -191,10 +192,8 @@ $(document).ready(function () {
         $('head').append(Link_Meus_Favoritos);
         $("#corpo .conteiner").after($(".Footer"));
         $(".meus-favoritos .abas-conta").children().not(".active").addClass("Desativado");
-   
-}
-   
-}
+
+    }
 
 
 });
