@@ -176,9 +176,9 @@ $(document).ready(function () {
             href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_MEUS_PEDIDOS.css"
         })
         $('head').append(Link_Meus_Pedidos);
-        $("#corpo").after($(".Footer"));
+        $("#corpo .conteiner").after($(".Footer"));
         $(".meus-pedidos .abas-conta").children().not(".active").addClass("Desativado");
-            }
+   }
 
 
 });
