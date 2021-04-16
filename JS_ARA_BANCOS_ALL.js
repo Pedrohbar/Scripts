@@ -178,7 +178,11 @@ $(document).ready(function () {
         $('head').append(Link_Meus_Pedidos);
         $("#corpo .conteiner").after($(".Footer"));
         $(".meus-pedidos .abas-conta").children().not(".active").addClass("Desativado");
-   }
+        if($(".caixa-dados").length <= 1){
+            $("body").css("height","100%")
+        }
+   
+}
 
 
 });
