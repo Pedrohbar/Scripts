@@ -194,6 +194,7 @@ $(document).ready(function () {
         $(".cadastro .abas-conta").children().not(".active").addClass("Desativado");
 
     }
+
     if (window.location.pathname.includes("/conta/alterar_senha")) {
 
         var Link_Conta_Alterar_Senha = $("<link />", {
@@ -206,6 +207,19 @@ $(document).ready(function () {
         $(".cadastro .abas-conta").children().not(".active").addClass("Desativado");
 
     }
+    if (window.location.pathname.includes("/conta/favorito/listar")) {
+
+        var Link_Meus_Favoritos = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_LISTA_DE_DESEJOS.css"
+        })
+        $('head').append(Link_Meus_Favoritos);
+        $("#corpo .conteiner").after($(".Footer"));
+        $(".meus-favoritos .abas-conta").children().not(".active").addClass("Desativado");
+
+    }
 
 
 });
+
