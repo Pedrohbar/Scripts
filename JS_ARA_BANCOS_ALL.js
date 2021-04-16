@@ -194,6 +194,18 @@ $(document).ready(function () {
         $(".cadastro .abas-conta").children().not(".active").addClass("Desativado");
 
     }
+    if (window.location.pathname.includes("/conta/alterar_senha")) {
+
+        var Link_Conta_Alterar_Senha = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_MINHA_CONTA_ALTERAR_SENHA.css"
+        })
+        $('head').append(Link_Conta_Alterar_Senha);
+        $("#corpo .conteiner").after($(".Footer"));
+        $(".cadastro .abas-conta").children().not(".active").addClass("Desativado");
+
+    }
 
 
 });
