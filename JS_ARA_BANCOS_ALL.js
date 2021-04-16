@@ -181,6 +181,18 @@ $(document).ready(function () {
         if($(".caixa-dados").length <= 1){
             $("body").css("height","100%");
         }
+            if (window.location.pathname.includes("/conta/favorito/listar")) {
+
+        var Link_Meus_Favoritos = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ARA_BANCOS_LISTA_DE_DESEJOS.css"
+        })
+        $('head').append(Link_Meus_Favoritos);
+        $("#corpo .conteiner").after($(".Footer"));
+        $(".meus-favoritos .abas-conta").children().not(".active").addClass("Desativado");
+   
+}
    
 }
 
