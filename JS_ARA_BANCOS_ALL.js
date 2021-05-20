@@ -1,3 +1,4 @@
+//loja integrada
 $(document).ready(function () {
     if ($('.Container_Cadastrar_e_Entrar_Carrinho .Icone_Carrinho a .carrinho').length == 0) {
         var htmlIconeCarrinho = '<div class="carrinho">' +
