@@ -4,7 +4,7 @@ $( document ).ready(function() {
    $("#header-right-cart .row").before($(".entrar-ou-cadastrar"));
    $(".pagebuilder.clearfix").children().eq(0).addClass("container-carrossel");
    
-   if ($(".pagebuilder.clearfix")) {
+   if ($(".pagebuilder.clearfix")[0]) {
       
       var Link_Pagina_Cadastro = $("<link />", {
             rel: "stylesheet",
