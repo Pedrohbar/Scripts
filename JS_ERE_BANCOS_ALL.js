@@ -35,7 +35,13 @@ $( document ).ready(function() {
       
    }
    else if(window.location.pathname.includes("/identificacao")){
-   $("html").remove();
+        var Link_Pagina_Cadastro = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_IDENTIFICACAO.css"
+        });
+      
+      $("head").append(Link_Pagina_Cadastro);
 
 
    }
