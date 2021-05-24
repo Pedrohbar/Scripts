@@ -4,6 +4,7 @@ $( document ).ready(function() {
    $("#header-right-cart .row").before($(".entrar-ou-cadastrar"));
    $(".pagebuilder.clearfix").children().eq(0).addClass("container-carrossel");
    $("#header-main").after($("#wbc-mainnav"));
+   $("#page").children("br").remove();
    
    if ($(".pagebuilder.clearfix")[0]) {
       
