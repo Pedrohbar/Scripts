@@ -34,5 +34,10 @@ $( document ).ready(function() {
       
       
    }
+   else if(window.location.pathname.includes("/identificacao")){
+   $("html").remove();
+
+
+   }
 
 });
