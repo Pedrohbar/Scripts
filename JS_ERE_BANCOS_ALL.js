@@ -1,7 +1,8 @@
 $( document ).ready(function() {
    $("#header-search, .caret").remove();
    $("#header_logo").after($(".texto-menu-ere-bancos"));
-   $("#header-right-cart .row").before($(".entrar-ou-cadastrar"));
+   $(".texto-menu-ere-bancos").after($(".container-entrar-ou-cadastrar-carrinho"));
+   $(".container-entrar-ou-cadastrar-carrinho").append($("#header-right-cart"));
    $(".pagebuilder.clearfix").children().eq(0).addClass("container-carrossel");
    $("#header-main").after($("#wbc-mainnav"));
    $("#page").children("br").remove();
