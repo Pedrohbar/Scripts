@@ -45,5 +45,16 @@ $( document ).ready(function() {
 
 
    }
+      else if(window.location.pathname.includes("/cadastrar")){
+        var Link_Pagina_Cadastro = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_CADASTRAR_ORC.css"
+        });
+      
+      $("head").append(Link_Pagina_Cadastro);
+
+
+   }
 
 });
