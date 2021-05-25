@@ -56,5 +56,17 @@ $( document ).ready(function() {
 
 
    }
+   
+   if($("#header_user_info .login:eq(0)").text() != " Login ou Cadastre-se"){
+      
+    var  BotaoSair = '<div class="sair">' +
+           '<a href="logoff">Sair'+
+            '</a>'+
+            '</div>';    
+
+
+	$(".entrar-ou-cadastrar").children().remove();
+   $(".entrar-ou-cadastrar").append(BotaoSair) 
+}
 
 });
