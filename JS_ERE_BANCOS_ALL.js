@@ -10,6 +10,14 @@ $( document ).ready(function() {
    $("#header-main").after($("#wbc-mainnav"));
    $("#page").children("br").remove();
    
+    $(".dropdown-menu-inner ul li").each(function () {
+    var InserirTextoDinamico = $(this).find("a .menu-title").text().replaceAll(" ", "").toLowerCase();
+    var GeradorImagem = '<img src="../fotos/'+ InserirTextoDinamico + '.jpg">' + '</img>';
+    $(this).find(".menu-title").before(GeradorImagem);
+
+});
+
+   
    if ($(".pagebuilder.clearfix")[0]) {
       
       var Link_Pagina_Cadastro = $("<link />", {
