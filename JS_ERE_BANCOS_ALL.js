@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    $("link:eq(1)").prop("href","https://www.erebancos52.oruc.com.br/themes/global/css/global-home_v2.min.css?v=2");
-    $("link:eq(2)").prop("href","https://www.erebancos52.oruc.com.br/themes/global/css/etalage.min.css");
 	
    $("#header-search, .caret").remove();
    
