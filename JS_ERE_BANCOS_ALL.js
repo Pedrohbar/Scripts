@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-   $("#header-search, .caret").remove();
+   $("#header-search, .caret, #header_user_info .list-inline li:first-child").remove();
    
    $("#header_logo").after($(".container-entrar-ou-cadastrar-carrinho"));
    $(".container-entrar-ou-cadastrar-carrinho").append($("#header-right-cart"));
