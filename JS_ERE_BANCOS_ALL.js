@@ -1,10 +1,25 @@
 $( document ).ready(function() {
-	
-   $("#header-search, .caret, #header_user_info .list-inline li:first-child").remove();
+   //remover classes e ids não utilizaveis	
+   $("#header-search, .caret").remove();
+   //}
    
+   //esconder classes e ids não utilizaveis{
+   //menu{
+   $("#header_user_info .list-inline li:first-child").css("display","none");
+   //}
+   //footer{
+   $(".nav-links li:last-child").css("display","none");
+   $("#collapse4 p:last-child").css("display","none");
+   $(".block.space-top-15.space-left-10 p").css("display","none");
+   $(".row.clearfix.formas").find(".widget-html.block.space-lr-10 p:last-child").css("display","none");
+   $(".widget-inner.block_content.text-center").children("p:last-child").css("display","none");
+   //}
+   //}
+	
+   //posiciona os textos de logar e sair proximo ao carrinho{
    $("#header_logo").after($(".container-entrar-ou-cadastrar-carrinho"));
    $(".container-entrar-ou-cadastrar-carrinho").append($("#header-right-cart"));
-  
+   //}
 	
    $(".pagebuilder.clearfix").children().eq(0).addClass("container-carrossel");
    $("#header-main").after($("#wbc-mainnav"));
@@ -77,7 +92,7 @@ $( document ).ready(function() {
 
 
 	$(".entrar-ou-cadastrar").children().remove();
-   $(".entrar-ou-cadastrar").append(BotaoSair) 
+   	$(".entrar-ou-cadastrar").append(BotaoSair) 
 }
 
 });
