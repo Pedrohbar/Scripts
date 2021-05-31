@@ -26,9 +26,11 @@ $( document ).ready(function() {
    $("#page").children("br").remove();
    
     $(".dropdown-menu-inner ul li").each(function () {
-    var InserirTextoDinamico = $(this).find("a .menu-title").text().replaceAll(" ", "").toLowerCase();
+    var InserirTextoDinamico = $(this).find("a .menu-title").text().replaceAll(" ", "").replaceAll("Á", "A").replaceAll("á", "A").replaceAll("É", "E").replaceAll("é", "E").replaceAll("Í", "I").replaceAll("i", "I").replaceAll("Ó", "O").replaceAll("ó", "O").replaceAll("Ú", "U").replaceAll("ú", "U").replaceAll("(", "").replaceAll(")", "").replaceAll("/", "").toLowerCase();
     var GeradorImagem = '<img src="../fotos/'+ InserirTextoDinamico + '.jpg">' + '</img>';
     $(this).find(".menu-title").before(GeradorImagem);
+
+    });
 
 });
    
