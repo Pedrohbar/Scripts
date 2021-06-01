@@ -5,14 +5,7 @@ $(document).ready(function () {
 
     //esconder classes e ids não utilizaveis{
     //menu{
-    $("#header_user_info .list-inline li:first-child").css("display", "none");
-    //}
-    //footer{
-    $(".nav-links li:last-child").css("display", "none");
-    $("#collapse4 p:last-child").css("display", "none");
-    $(".block.space-top-15.space-left-10 p").css("display", "none");
-    $(".row.clearfix.formas").find(".widget-html.block.space-lr-10 p:last-child").css("display", "none");
-    $(".widget-inner.block_content.text-center").children("p:last-child").css("display", "none");
+//here
     //}
     //}
     AdicionarDirecionadorWhatsappTopo();
