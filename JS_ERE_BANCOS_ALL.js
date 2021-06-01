@@ -6,6 +6,10 @@ $(document).ready(function () {
     //esconder entrar e sair{
     $("#header_user_info .list-inline li:first-child").css("display", "none");
     //}
+    //remover certificados footer{
+    $(".col-lg-6.col-md-6.col-sm-12.col-xs-12:eq(1)").remove();
+    
+    //}
     AdicionarDirecionadorWhatsappTopo();
 
     //posiciona os textos de logar e sair proximo ao carrinho{
