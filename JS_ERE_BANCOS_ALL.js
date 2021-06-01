@@ -6,7 +6,12 @@ $(document).ready(function () {
     //esconder entrar e sair{
     $("#header_user_info .list-inline li:first-child").css("display", "none");
     //}
-    //remover certificados footer{
+    //remover edicao footer{
+    $(".nav-links li:last-child").css("display", "none");
+    $("#collapse4 p:last-child").css("display", "none");
+    $(".block.space-top-15.space-left-10 p").css("display", "none");
+    $(".row.clearfix.formas").find(".widget-html.block.space-lr-10 p:last-child").css("display", "none");
+    $(".widget-inner.block_content.text-center").children("p:last-child").css("display", "none");
     $(".col-lg-6.col-md-6.col-sm-12.col-xs-12:eq(1)").remove();
     
     //}
