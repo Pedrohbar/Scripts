@@ -3,10 +3,8 @@ $(document).ready(function () {
     $("#header-search, .caret").remove();
     //}
 
-    //esconder classes e ids não utilizaveis{
-    //menu{
-//here
-    //}
+    //esconder entrar e sair{
+    $("#header_user_info .list-inline li:first-child").css("display", "none");
     //}
     AdicionarDirecionadorWhatsappTopo();
 
