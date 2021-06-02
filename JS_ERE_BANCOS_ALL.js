@@ -85,16 +85,6 @@ $(document).ready(function () {
 
 
     }
-    if ($(".lists.tree.block-category.dynamized")[0]) {
-        var Link_Pagina_Selecao_De_Produto = $("<link />", {
-            rel: "stylesheet",
-            type: "text/css",
-            href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_PAGINA_SELECAO_DE_PRODUTOS.css"
-        });
-
-        $("head").append(Link_Pagina_Selecao_De_Produto);
-        $("body").remove();
-    }
 
     if ($("#header_user_info .login:eq(0)").text() != " Login ou Cadastre-se") {
 
@@ -108,6 +98,15 @@ $(document).ready(function () {
         $(".entrar-ou-cadastrar").append(BotaoSair)
     }
 
+    if ($(".lists.tree.block-category.dynamized")[0]) {
+        var Link_Pagina_Selecao_De_Produto = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_PAGINA_SELECAO_DE_PRODUTOS.css"
+        });
+
+        $("head").append(Link_Pagina_Selecao_De_Produto);
+    }
     function AdicionarDirecionadorWhatsappTopo() {
         var Numero_Whatsapp = $(".shop-phone:eq(2)").text();
         var Numero_Whatsapp_Dinamico = $(".shop-phone:eq(2)").text().replaceAll("(", "").replaceAll(")", "").replaceAll(" ", "").replaceAll("-", "");
