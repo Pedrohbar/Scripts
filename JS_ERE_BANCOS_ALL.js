@@ -44,7 +44,7 @@ $(document).ready(function () {
     }
 
 
-    if ($(".pagebuilder.clearfix")[0]) {
+    else if ($(".pagebuilder.clearfix")[0]) {
 
         var Link_Pagina_Index = $("<link />", {
             rel: "stylesheet",
@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 
     }
-    if (window.location.pathname.includes("/identificacao")) {
+    else if (window.location.pathname.includes("/identificacao")) {
         var Link_Pagina_Identificacao = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
@@ -83,7 +83,7 @@ $(document).ready(function () {
 
 
     }
-    if (window.location.pathname.includes("/cadastrar")) {
+    else if (window.location.pathname.includes("/cadastrar")) {
         var Link_Pagina_Cadastro = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
