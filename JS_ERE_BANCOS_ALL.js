@@ -37,13 +37,13 @@ $(document).ready(function () {
 
     if ($(".pagebuilder.clearfix")[0]) {
 
-        var Link_Pagina_Cadastro = $("<link />", {
+        var Link_Pagina_Index = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_INDEX.css"
         });
 
-        $("head").append(Link_Pagina_Cadastro);
+        $("head").append(Link_Pagina_Index);
 
         var CaixaBordao = '<div class="container-bordao">' +
             '<div class="organizar-texto-e-imagem">' +
@@ -64,13 +64,13 @@ $(document).ready(function () {
 
     }
     else if (window.location.pathname.includes("/identificacao")) {
-        var Link_Pagina_Cadastro = $("<link />", {
+        var Link_Pagina_Identificacao = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_IDENTIFICACAO.css"
         });
 
-        $("head").append(Link_Pagina_Cadastro);
+        $("head").append(Link_Pagina_Identificacao);
 
 
     }
@@ -84,6 +84,15 @@ $(document).ready(function () {
         $("head").append(Link_Pagina_Cadastro);
 
 
+    }
+    else if($(".lists.tree.block-category.dynamized")) {
+        var Link_Pagina_Selecao_De_Produto = $("<link />", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_PAGINA_SELECAO_DE_PRODUTOS.css"
+        });    
+    
+        $("head").append(Link_Pagina_Selecao_De_Produto);
     }
 
     if ($("#header_user_info .login:eq(0)").text() != " Login ou Cadastre-se") {
