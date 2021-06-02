@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     });
     
-    if ($(".lists.tree.block-category.dynamized")[0]) {
+    if ($(".sidebar.column.col-xs-12.col-sm-12.col-md-3.col-lg-3.offcanvas-sidebar")[0]) {
         var Link_Pagina_Selecao_De_Produto = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
