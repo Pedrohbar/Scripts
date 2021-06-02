@@ -41,7 +41,7 @@ $(document).ready(function () {
         });
 
         $("head").append(Link_Pagina_Selecao_De_Produto);
-        $("#columns").after($("#footer"));
+        $(".main-content").after($("#footer"));
     }
 
 
