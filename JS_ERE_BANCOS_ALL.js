@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(".row.clearfix.formas").find(".widget-html.block.space-lr-10 p:last-child").css("display", "none");
     $(".widget-inner.block_content.text-center").children("p:last-child").css("display", "none");
     $(".col-lg-6.col-md-6.col-sm-12.col-xs-12:eq(1)").remove();
-    
+
     //}
     AdicionarDirecionadorWhatsappTopo();
 
@@ -90,8 +90,8 @@ $(document).ready(function () {
             rel: "stylesheet",
             type: "text/css",
             href: "https://pedrohbar.github.io/Styles/CSS_ERE_BANCOS_PAGINA_SELECAO_DE_PRODUTOS.css"
-        });    
-    
+        });
+
         $("head").append(Link_Pagina_Selecao_De_Produto);
     }
 
