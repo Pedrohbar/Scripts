@@ -93,6 +93,7 @@ $(document).ready(function () {
         });
 
         $("head").append(Link_Pagina_Selecao_De_Produto);
+        $("body").remove();
     }
 
     if ($("#header_user_info .login:eq(0)").text() != " Login ou Cadastre-se") {
