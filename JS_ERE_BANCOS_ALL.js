@@ -85,7 +85,7 @@ $(document).ready(function () {
 
 
     }
-    if($(".lists.tree.block-category.dynamized")[0]) {
+    if ($(".lists.tree.block-category.dynamized")[0]) {
         var Link_Pagina_Selecao_De_Produto = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
