@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 
     }
-    else if (window.location.pathname.includes("/identificacao")) {
+    if (window.location.pathname.includes("/identificacao")) {
         var Link_Pagina_Identificacao = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 
     }
-    else if (window.location.pathname.includes("/cadastrar")) {
+    if (window.location.pathname.includes("/cadastrar")) {
         var Link_Pagina_Cadastro = $("<link />", {
             rel: "stylesheet",
             type: "text/css",
