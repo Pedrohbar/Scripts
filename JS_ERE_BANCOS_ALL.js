@@ -33,6 +33,16 @@ $(document).ready(function () {
 
     });
     
+    $(".dropdown-menu.submenu-v1").children().find(".menu-title").each(function(){
+        var TodosSpansFiltrar = $(this).text();
+        if(TodosSpansFiltrar.includes("(")){
+            var SpanFiltrado = $(this).text();
+            var AdicionarBreakSpan = SpanFiltrado.replace("(","<br/>(")
+            $(this).html(AdicionarBreakSpan);
+    }
+
+    });
+    
     if ($(".sidebar.column.col-xs-12.col-sm-12.col-md-3.col-lg-3.offcanvas-sidebar")[0]) {
         var Link_Pagina_Selecao_De_Produto = $("<link />", {
             rel: "stylesheet",
